@@ -41,7 +41,7 @@
     }
 
     function getMessage(){
-        $.get(this.location.href+'/messages',(response)=>{
+        $.get(this.location.href+'messages',(response)=>{
             response.forEach(element => {
                 addMessages(element);
             });            
@@ -49,7 +49,7 @@
     }
 
     function postMessage(message){
-        $.post(this.location.href+'/messages',message);
+        $.post(this.location.href+'messages',message);
     }
 </script>
 
